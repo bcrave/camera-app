@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Webcam</title>
+    <title>Camera App</title>
   </head>
   <body>
     <main id="camera">
       <canvas id="camera-sensor"></canvas>
-      <video id="camera-view" autoplay></video>
+      <video id="camera-view" autoplay playsinline></video>
       <img src="//:0" alt="" id="camera-output" />
       <button id="camera-trigger">Take a picture</button>
     </main>

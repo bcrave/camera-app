@@ -1,15 +1,17 @@
+// Set constraints
 const constraints = {
   video: {
     facingMode: "user",
   },
   audio: false,
 };
-
+// Set constants
 const cameraView = document.querySelector("#camera-view"),
   cameraOutput = document.querySelector("#camera-output"),
   cameraSensor = document.querySelector("#camera-sensor"),
   cameraTrigger = document.querySelector("#camera-trigger");
 
+// Start Camera
 const cameraStart = () => {
   navigator.mediaDevices
     .getUserMedia(constraints)
@@ -20,6 +22,7 @@ const cameraStart = () => {
     .catch((err) => console.log(err));
 };
 
+// Take a picture
 cameraTrigger.onclick = () => {
   cameraSensor.width = cameraView.videoWidth;
   cameraSensor.height = cameraView.videoHeight;
