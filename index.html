@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/ab975ea356.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Camera App</title>
   </head>
   <body>
@@ -11,7 +15,12 @@
       <canvas id="camera-sensor"></canvas>
       <video id="camera-view" autoplay playsinline></video>
       <img src="//:0" alt="" id="camera-output" />
-      <button id="camera-trigger">Take a picture</button>
+      <div class="buttons">
+        <button id="change-camera">
+          <i class="fas fa-sync-alt"></i>
+        </button>
+        <button id="camera-trigger">Take a picture</button>
+      </div>
     </main>
 
     <script src="./app.js"></script>

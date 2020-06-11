@@ -23,6 +23,12 @@ body {
   filter: FlipH;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #camera-trigger {
   width: 200px;
   background-color: black;
@@ -36,6 +42,27 @@ body {
   position: fixed;
   bottom: 30px;
   left: calc(50% - 100px);
+}
+
+#camera-trigger:hover {
+  cursor: pointer;
+}
+
+#change-camera {
+  position: fixed;
+  width: 50px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  padding: 15px 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  bottom: 30px;
+}
+
+#change-camera:hover {
+  cursor: pointer;
 }
 
 .taken {
