@@ -1,7 +1,7 @@
 // Set constraints
 const constraints = {
   video: {
-    facingMode: "user",
+    facingMode: "environment",
   },
   audio: false,
 };
