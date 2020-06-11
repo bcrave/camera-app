@@ -14,13 +14,13 @@ const cameraStart = () => {
   navigator.mediaDevices
     .getUserMedia(constraints)
     .then((stream) => {
-      track = stream.getTracks()[0];
+      // track = stream.getTracks()[0];
       cameraView.srcObject = stream;
     })
     .catch((err) => console.log(err));
 };
 
-cameraTrigger.onClick = () => {
+cameraTrigger.onclick = () => {
   cameraSensor.width = cameraView.videoWidth;
   cameraSensor.height = cameraView.videoHeight;
   cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
